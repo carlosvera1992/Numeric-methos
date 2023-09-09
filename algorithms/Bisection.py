@@ -36,7 +36,6 @@ def bisection(func, a, b, tol):
     return root, iterations, table_df
 
 
-
 # Definición de la función que quieres encontrar la raíz
 def my_function(x):
     return math.exp(-x) - x
@@ -47,6 +46,6 @@ tolerance = 1e-6
 
 root, iterations, table_df = bisection(my_function, a, b, tolerance)
 
-# Mostrar la tabla de valores
-print("Tabla de Valores de la Función:")
+print("Aproximación de la raíz:", root)
+print("\nTabla de Valores de la Función:")
 print(table_df)
